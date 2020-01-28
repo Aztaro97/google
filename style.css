@@ -44,8 +44,9 @@ header{
     padding: .9375rem 0;
 }
 .search {
+    padding-left: 1rem ;
     font-size: 1.06rem;
-    text-align: center;
+    text-align: start;
     border: none;
     width: 37.5rem;
     height: 3.125rem;
@@ -133,58 +134,60 @@ hr {
 
 
 /*------------------- Responsive --------------*/
-@media only screen and (max-width:700px) {
+@media only screen and (max-width:900px) {
     body {
         font-size: 12px;
     }
-    .ion-md-apps {
-        font-size: 2.1875rem;
-        margin-right: .9375rem;
-        padding:0 .3125rem;
-        position: relative;
-        top: .5rem;
-        left: 1.25rem;
+    .nav a:nth-child(4) {
+        display: none;
     }
     .nav a {
-        display: none;
+        font-size: .7rem;
+    }
+    .icon {
+        font-size: 1.8rem;
     }
 
     /*-------- Container -------------*/
     .container {
-        
+        padding: 0;
+        margin: 0;
+    }
+    .research {
+        padding: 0;
+        margin: 0;
+    }
+    .logo {
+        margin-top: 2rem;
+        padding: 0;
     }
     .logo img {
-        width: 12.5rem;
+        width: 8rem;
         height: auto;
     }
     .search {
-        font-size: 1.06rem;
-        text-align: center;
+        font-size: .7rem;
+        text-align: start;
         border: none;
-        width: 18.75rem;
-        height: 2rem;
+        width: 12.75rem;
+        height: 1rem;
         border-radius: 1.25rem;
     }
-    .ion-md-search {
-        font-size: 1.25rem;
-        color: rgba(0, 0, 0, 0.52);
-        position: relative;
-        left: 2.5rem;
-        top: .3125rem;
-    }
     .ion-md-mic {
-        font-size: 1.25rem;
-        top: .3125rem;
+        font-size: .8rem;
+        top: 0;
         right: 1.875rem;
     }
-
+    .bt-search {
+        padding: .2rem 0;
+    }
     .bt-search > a {
-        font-size: .9375rem;
+        font-size: .5rem;
         text-decoration: none;
-        color: black;
-        padding: .3125rem .625rem;
+        color: rgba(0, 0, 0, 0.6);
+        padding: .2rem .4rem;
         background:#ececec;
-        margin: 0 .625rem;
+        margin: 0 .1rem
     }
     .lang-select p {
         font-weight: bold;
@@ -193,7 +196,7 @@ hr {
 
     .lang-select > p a {
         color: rgba(0, 0, 0, 0.6);
-        font-size: .9375rem;
+        font-size: .8rem;
         text-decoration: none;
     }
 
@@ -211,6 +214,6 @@ hr {
         display: flex;
     }
     .footer-right {
-        margin-top: .3125rem;
+        margin-top: .2rem;
         padding: 1.25rem 0;
     }
